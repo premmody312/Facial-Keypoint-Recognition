@@ -44,7 +44,8 @@ ToTensor: to convert numpy images to torch images.
 
 ### Defining the Convolutional Neural Network Architecture:
 
-  Net(
+```python
+Net(
     (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
     (conv1_bn): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
     (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
@@ -61,6 +62,9 @@ ToTensor: to convert numpy images to torch images.
     (fc3): Linear(in_features=1000, out_features=136, bias=True)
     (dropout): Dropout(p=0.4)
   )
+  
+```
+  
 
 ### Face and Facial Keypoint detection:
 
