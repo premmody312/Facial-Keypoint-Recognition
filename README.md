@@ -44,23 +44,23 @@ ToTensor: to convert numpy images to torch images.
 
 ### Defining the Convolutional Neural Network Architecture:
 
-Net(
-  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
-  (conv1_bn): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
-  (conv2_bn): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-  (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1))
-  (conv3_bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-  (conv4): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
-  (conv4_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
-  (fc1): Linear(in_features=36864, out_features=4000, bias=True)
-  (fc1_bn): BatchNorm1d(4000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-  (fc2): Linear(in_features=4000, out_features=1000, bias=True)
-  (fc2_bn): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-  (fc3): Linear(in_features=1000, out_features=136, bias=True)
-  (dropout): Dropout(p=0.4)
-)
+  Net(
+    (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
+    (conv1_bn): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+    (conv2_bn): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1))
+    (conv3_bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (conv4): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
+    (conv4_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (fc1): Linear(in_features=36864, out_features=4000, bias=True)
+    (fc1_bn): BatchNorm1d(4000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (fc2): Linear(in_features=4000, out_features=1000, bias=True)
+    (fc2_bn): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (fc3): Linear(in_features=1000, out_features=136, bias=True)
+    (dropout): Dropout(p=0.4)
+  )
 
 ### Face and Facial Keypoint detection:
 
